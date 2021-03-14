@@ -36,7 +36,9 @@
     "eject": "react-scripts eject",
     "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x} --color",
-    "generate": "./node_modules/.bin/plop --plopfile src/plop/generators/index.js"
+    "generate": "./node_modules/.bin/plop --plopfile src/plop/generators/index.js",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "husky": {
     "hooks": {
@@ -70,6 +72,12 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/node-logger": "^6.1.21",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.1.21",
     "@types/lodash": "^4.14.166",
     "@types/react-redux": "^7.1.14",
     "@types/react-router": "^5.1.9",

@@ -19,6 +19,7 @@
     "react/prop-types": "off", //* Since we do not use prop-types
     "react/require-default-props": "off", //* Since we do not use prop-types
     "react/react-in-jsx-scope": "off", //* React v17 uses JSX transform.Hence, With the new transform, you can use JSX without importing React.
+    "react/jsx-props-no-spreading": "off",
     "camelcase": [
       "error",
       {
