@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: '12.x'
     - run: yarn
-    - run: yarn run build
+    - run: yarn build-storybook
     - name: Deploy
       uses: crazy-max/ghaction-github-pages@v1
       with:

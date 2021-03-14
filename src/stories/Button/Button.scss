@@ -1,0 +1,44 @@
+.storybook-button {
+  border-radius: 22px;
+  padding: 12px 24px;
+  cursor: pointer;
+  line-height: 20px;
+  border: none;
+  &:disabled {
+    color: #acafb2;
+    background: #e5e5e6;
+    cursor: not-allowed;
+    &:hover {
+      color: #acafb2;
+      background: #e5e5e6;
+      box-shadow: none;
+    }
+  }
+  &--primary {
+    color: white;
+    background: #6c00e1;
+    &:hover {
+      background: #9533ff;
+    }
+  }
+  &--secondary {
+    color: #6c00e1;
+    background: #eee7fd;
+    &:hover {
+      box-shadow: 0 0 0 1px #4b26a6;
+    }
+  }
+
+  &--large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  &--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+  &--small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+}

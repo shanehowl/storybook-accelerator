@@ -1,11 +1,15 @@
 import React from 'react'
-import './button.css'
+import './Button.scss'
 
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
   primary?: boolean
+  /**
+   * Should the button be disabled?
+   */
+  disabled?: boolean
   /**
    * What background color to use
    */
@@ -29,6 +33,7 @@ export interface ButtonProps {
  */
 export const Button: React.FC<ButtonProps> = ({
   primary = false,
+  disabled = false,
   size = 'medium',
   backgroundColor,
   label,
@@ -39,6 +44,7 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      disabled={disabled}
       style={{ backgroundColor }}
       {...props}
     >
