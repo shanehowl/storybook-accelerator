@@ -83,6 +83,7 @@
     "@types/react-router": "^5.1.9",
     "@types/react-router-dom": "^5.1.7",
     "@types/redux-promise": "^0.5.29",
+    "@types/storybook-addon-jsx": "^7.0.1",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.14.0",
@@ -100,6 +101,7 @@
     "lint-staged": "^10.5.3",
     "plop": "^2.7.4",
     "prettier": "^2.2.1",
+    "storybook-addon-designs": "^5.4.5",
     "ts-jest": "^26.4.4"
   },
   "homepage": "https://shanehowl.github.io/standard-react-app/"
